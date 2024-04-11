@@ -1,0 +1,234 @@
+// New Design
+.new_design_home {
+  width: 100%;
+  height: 1580px;
+  display: flex;
+  background-color: #f8f9fa;
+}
+
+// Sidebar
+.sidebar_left {
+  width: 15%;
+  background-color: #f8f9fa;
+
+  .sidebar_logo {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    height: 48px;
+    cursor: pointer;
+
+    .icon_logo {
+      width: 30px;
+      height: 30px;
+    }
+    h6 {
+      margin-left: 14px;
+      font-size: 14px;
+    }
+  }
+  .sidebar_vector {
+    border: 1px solid grey;
+    margin: 12px 8px;
+    border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(128, 128, 128, 0.5),
+        rgba(255, 255, 255, 0)
+      )
+      1 stretch;
+  }
+  .sidebar_menu {
+    width: 80%;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    margin: auto;
+    font-size: 14px;
+
+    .sidebar_menu_item {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 16px;
+      align-items: center;
+      .background_menu_icon {
+        height: 32px;
+        width: 32px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        color: #4fd1c5;
+        cursor: pointer;
+
+        .menu_icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .sidebar_menu_title {
+        margin-left: 16px;
+        color: #a0aec0;
+        cursor: pointer;
+      }
+    }
+    .menu_dashboard {
+      border-radius: 15px;
+      background-color: #fff;
+      border: 1px solid #f7f8f8;
+
+      .sidebar_menu_dashboard {
+        .background_menu_icon_dashboard {
+          height: 32px;
+          width: 32px;
+          background-color: #4fd1c5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px;
+          color: #fff;
+          border: 1px solid #f7f8f8;
+          cursor: pointer;
+
+          .sidebar_menu_icon_dashboard {
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .sidebar_menu_title_dashboard {
+          margin-left: 16px;
+          color: #333;
+        }
+      }
+    }
+
+    .sidebar_menu_accountPage {
+      font-weight: bold;
+      margin: 18px;
+    }
+  }
+}
+
+// Main Dashboard
+.main_dashboard {
+  width: 85%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-around;
+
+  .main_dashboard_item {
+    width: 98%;
+
+    .main_dashboard_navbar {
+      height: 52px;
+      width: 98%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f8f9fa;
+      margin-left: 8px;
+
+      .dashboard_navbar_text {
+        margin: auto 16px;
+        .dashboard_navbar_text_item1 {
+          .text_item1 {
+            margin: 0 4px;
+          }
+          .text_item1_page {
+            color: #a0aec0;
+          }
+        }
+
+        .dashboard_navbar_text_item2 {
+          margin-top: 6px;
+          font-weight: bold;
+          display: flex;
+          margin-left: 2px;
+        }
+      }
+      .dashboard_navbar_menu {
+        display: flex;
+        align-items: center;
+        margin: 0 2px;
+        cursor: pointer;
+
+        .dashboard_navbar_item {
+          margin: 0 8px;
+          color: #a0aec0;
+        }
+
+        .dashboard_navbar_menu_search {
+          width: 200px;
+          height: 40px;
+          background-color: #fff;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          border: 0.5px solid #e3e9f0;
+
+          .dashboard_navbar_menu_search_icon {
+            width: 15px;
+            height: 15px;
+            margin-left: 14px;
+            color: #333;
+          }
+
+          .dashboard_navbar_menu_search_input {
+            color: #b6c0ce;
+
+            input {
+              border: none;
+              width: 80%;
+              outline: none;
+            }
+          }
+        }
+
+        .dashboard_navbar_signIn {
+          display: flex;
+
+          .background_menu_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .menu_icon {
+              width: 16px;
+              height: 16px;
+            }
+          }
+
+          .sidebar_menu_title_SignIn {
+            margin-left: 6px;
+            color: #333;
+          }
+        }
+
+        .dashboard_navbar_icon_setting {
+          width: 15px;
+          height: 15px;
+        }
+
+        .dashboard_navbar_icon_ {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .main_dashboard_content {
+      height: 50%;
+      background-color: #fff;
+      border-radius: 12px;
+
+      .main_dashboard_content_title {
+        font-weight: bold;
+        display: flex;
+        font-size: 20px;
+        margin-left: 27px;
+        translate: 0 18px;
+      }
+    }
+  }
+}
